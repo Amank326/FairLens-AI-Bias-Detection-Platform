@@ -370,7 +370,7 @@ Create a `.env` file in the `fairlens/` directory:
 
 ```env
 GEMINI_API_KEY=your_google_gemini_api_key_here
-PORT=8080
+PORT=3000
 ```
 
 > 🔑 Get your free API key at [Google AI Studio](https://aistudio.google.com/) — no credit card required.
@@ -383,7 +383,7 @@ npm start
 
 ### 5. Open the App
 
-Navigate to **[http://localhost:8080](http://localhost:8080)** in your browser.
+Navigate to **[http://localhost:3000](http://localhost:3000)** in your browser.
 
 ### 6. Try It Out
 
@@ -490,11 +490,11 @@ az webapp create \
   --name fairlens-app \
   --deployment-container-image-name fairlensacr.azurecr.io/fairlens-app:v1
 
-# Set the Gemini API Key and port
+# Set the Gemini API Key
 az webapp config appsettings set \
   --resource-group FairLens_RG \
   --name fairlens-app \
-  --settings GEMINI_API_KEY="your_api_key_here" PORT=8080
+  --settings GEMINI_API_KEY="your_api_key_here"
 ```
 
 ✅ Your app will be live at: **`https://fairlens-app.azurewebsites.net`**
@@ -560,7 +560,7 @@ Synchronous analysis — best for small to medium datasets.
 
 Asynchronous analysis via job queue — recommended for large datasets (100K+ rows).
 
-Returns a `jobId` immediately; poll for results when complete.
+This endpoint is planned for a future release. For now, use the synchronous endpoint above.
 
 ---
 
