@@ -4,7 +4,7 @@
 ---
 
 ## 🌐 Live Deployment
-**Live Demo:** [Click here to view the deployed FairLens Platform on Azure](#) *(Replace this with your actual Azure Deployment Link, e.g., https://fairlens.azurewebsites.net)*
+**Live Demo:** [Click here to view the deployed FairLens Platform on Azure](https://fairlens-ai-bufhfhasancsgue6.eastus-01.azurewebsites.net)
 
 ---
 
