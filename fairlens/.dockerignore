@@ -1,0 +1,10 @@
+node_modules
+npm-debug.log
+.env
+.git
+.gitignore
+README.md
+JUDGES_PITCH_GUIDE.md
+render.yaml
+Dockerfile
+.dockerignore

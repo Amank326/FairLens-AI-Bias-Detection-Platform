@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FairLens — AI Bias Detection Platform</title>
+  
+  <!-- Premium Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  
+  <!-- 3D UI UX + Animation Dependencies -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+  <div class="nav-brand">
+    <span class="nav-logo">⚖️</span>
+    <span class="nav-title">FairLens</span>
+  </div>
+  <div class="nav-links">
+    <a href="#upload-section">Analyze</a>
+    <a href="#about">About</a>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-tag">🚀 AI Bias Detection</div>
+    <h1 class="hero-title">
+      See the Bias.<br/>
+      <span class="gradient-text">Fix the Future.</span>
+    </h1>
+    <p class="hero-sub">
+      Upload any dataset — hiring, loans, medical, or education — and FairLens instantly detects hidden discrimination using AI, giving you actionable steps to build fairer systems.
+    </p>
+    <div class="hero-actions">
+      <button class="btn-primary" onclick="scrollToUpload()">
+        🔍 Analyze My Dataset
+      </button>
+      <button class="btn-secondary" onclick="loadDemo()">
+        ▶ Try Demo Data
+      </button>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Bias Types Detected</span></div>
+      <div class="stat"><span class="stat-num">AI</span><span class="stat-label">Gemini Powered</span></div>
+      <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Free & Open</span></div>
+    </div> <!-- CLOSED hero-stats -->
+    <div class="hero-glow-2"></div>
+  </div>
+  
+  <!-- Next-Gen 3D Display Container -->
+  <div class="hero-visual" id="hero-visual">
+    <div id="hero-canvas"></div>
+    
+    <!-- Floating Glass Data Cards -->
+    <div class="floating-glass card-top">
+      <div class="glass-icon">🛡️</div>
+      <div class="glass-text">
+        <h4>Fairness Assessed</h4>
+        <p>AI-driven model auditing</p>
+      </div>
+    </div>
+    
+    <div class="floating-glass card-bottom">
+      <div class="glass-icon">✨</div>
+      <div class="glass-text">
+        <h4>Bias Detected</h4>
+        <p>Root cause mitigation active</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section class="how-it-works" id="about">
+  <h2 class="section-title">How FairLens Works</h2>
+  <div class="steps-grid">
+    <div class="step-card">
+      <div class="step-num">01</div>
+      <div class="step-icon">📁</div>
+      <h3>Upload Dataset</h3>
+      <p>Upload any CSV file — hiring records, loan approvals, medical diagnoses, exam results.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">02</div>
+      <div class="step-icon">🔎</div>
+      <h3>Select Columns</h3>
+      <p>Choose which column is the outcome (hired/rejected) and which are sensitive attributes (gender, age, race).</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">03</div>
+      <div class="step-icon">🤖</div>
+      <h3>AI Analysis</h3>
+      <p>Google Gemini AI analyzes patterns, calculates fairness metrics, and explains bias in plain English.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">04</div>
+      <div class="step-icon">🛠️</div>
+      <h3>Get Fixes</h3>
+      <p>Receive specific, actionable recommendations to remove bias and build fairer AI systems.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== UPLOAD SECTION ===== -->
+<section class="upload-section" id="upload-section">
+  <div class="upload-container">
+    <h2 class="section-title">Analyze Your Dataset</h2>
+
+    <!-- Drop Zone -->
+    <div class="drop-zone" id="drop-zone"
+         ondragover="event.preventDefault(); this.classList.add('drag-over')"
+         ondragleave="this.classList.remove('drag-over')"
+         ondrop="handleDrop(event)">
+      <div class="drop-icon">📂</div>
+      <div class="drop-title">Drag & Drop your CSV file here</div>
+      <div class="drop-sub">or</div>
+      <label class="btn-upload">
+        Browse File
+        <input type="file" id="file-input" accept=".csv" style="display:none" onchange="handleFile(event)" />
+      </label>
+      <div class="drop-note">Supports .CSV files up to 10MB</div>
+    </div>
+
+    <!-- Column Config (hidden until file loaded) -->
+    <div class="column-config" id="column-config" style="display:none">
+      <h3>Configure Analysis</h3>
+      <div class="config-grid">
+        <div class="config-item">
+          <label>📌 Outcome Column <span class="tooltip" title="The column that shows decision (e.g., hired, approved, passed)">ℹ️</span></label>
+          <select id="outcome-col"></select>
+        </div>
+        <div class="config-item">
+          <label>👥 Sensitive Attributes <span class="tooltip" title="Columns like gender, race, age that should NOT affect outcome">ℹ️</span></label>
+          <select id="sensitive-cols" multiple></select>
+          <span class="config-note">Hold Ctrl/Cmd to select multiple</span>
+        </div>
+        <div class="config-item">
+          <label>✅ Positive Outcome Value</label>
+          <select id="positive-val"></select>
+        </div>
+      </div>
+      <div class="file-info" id="file-info"></div>
+      <button class="btn-primary btn-analyze" id="analyze-btn" onclick="runAnalysis()">
+        🔍 Run Bias Analysis
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LOADING ===== -->
+<div class="loading-overlay" id="loading" style="display:none">
+  <div class="loading-box">
+    <div class="loading-spinner"></div>
+    <div class="loading-title">FairLens is Analyzing...</div>
+    <div class="loading-step" id="loading-step">Parsing dataset...</div>
+    <div class="loading-bar"><div class="loading-progress" id="loading-progress"></div></div>
+  </div>
+</div>
+
+<!-- ===== RESULTS DASHBOARD ===== -->
+<section class="results-section" id="results" style="display:none">
+  <div class="results-header">
+    <div>
+      <h2>Analysis Results</h2>
+      <p id="results-subtitle">Dataset analysis complete</p>
+    </div>
+    <div class="results-actions">
+      <button class="btn-secondary btn-sm" onclick="downloadReport()">📄 Download Report</button>
+      <button class="btn-secondary btn-sm" onclick="resetApp()">🔄 New Analysis</button>
+    </div>
+  </div>
+
+  <!-- Score Cards Row -->
+  <div class="score-cards" id="score-cards"></div>
+
+  <!-- Main Grid -->
+  <div class="dashboard-grid">
+
+    <!-- Bias Score Gauge -->
+    <div class="dash-card span-1">
+      <h3 class="card-heading">Overall Bias Score</h3>
+      <div class="gauge-wrap">
+        <canvas id="gauge-chart" height="200"></canvas>
+        <div class="gauge-label">
+          <span id="gauge-score" class="gauge-number">--</span>
+          <span class="gauge-sub">out of 100</span>
+        </div>
+      </div>
+      <div class="bias-verdict" id="bias-verdict"></div>
+    </div>
+
+    <!-- Outcome Distribution -->
+    <div class="dash-card span-2">
+      <h3 class="card-heading">Outcome Distribution by Group</h3>
+      <canvas id="outcome-chart" height="200"></canvas>
+    </div>
+
+    <!-- Fairness Metrics -->
+    <div class="dash-card span-1">
+      <h3 class="card-heading">Fairness Metrics</h3>
+      <div id="metrics-list"></div>
+    </div>
+
+    <!-- AI Analysis -->
+    <div class="dash-card span-2">
+      <h3 class="card-heading">🤖 Gemini AI Analysis</h3>
+      <div class="ai-analysis-box" id="ai-analysis">
+        <div class="ai-loading">Gemini is thinking...</div>
+      </div>
+    </div>
+
+    <!-- Attribute Breakdown -->
+    <div class="dash-card span-3">
+      <h3 class="card-heading">Bias by Sensitive Attribute</h3>
+      <canvas id="attribute-chart" height="120"></canvas>
+    </div>
+
+    <!-- Recommendations -->
+    <div class="dash-card span-3">
+      <h3 class="card-heading">🛠️ AI-Powered Recommendations</h3>
+      <div id="recommendations"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-brand">⚖️ FairLens</div>
+  <div class="footer-tags">
+  </div>
+</footer>
+
+<script src="js/gemini.js"></script>
+<script src="js/bias-metrics.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
