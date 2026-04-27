@@ -14,7 +14,7 @@ async function analyzeDatasetWithGemini(datasetSummary, metrics) {
   const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
   
   // Use a supported model (gemini-pro is deprecated/unsupported in this API version)
-  const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro" });
+  const model = genAI.getGenerativeModel({ model: "gemini-2.5-pro" });
 
   const prompt = `
 You are FairLens, an advanced AI system specialized in AI ethics, fairness, and detecting bias in datasets.
