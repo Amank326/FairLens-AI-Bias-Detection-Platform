@@ -1,0 +1,272 @@
+2026-04-26T09:27:37.1940876Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-26T09:27:38.0155123Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-26T09:27:38.0204097Z Container start method called.
+2026-04-26T09:27:38.0264422Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.4:13209/appsvc/node:20-lts_20260115.4.tuxprod for fairlens-ai., DetailsLevel: INFO
+2026-04-26T09:27:38.0301941Z Establishing network.
+2026-04-26T09:27:38.0304247Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-04-26T09:27:38.4561181Z Image appsvc/node:20-lts_20260115.4.tuxprod is pulled from registry 10.1.0.4:13209
+2026-04-26T09:27:38.4563652Z Container is starting.
+2026-04-26T09:27:38.4565292Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for fairlens-ai., DetailsLevel: INFO
+2026-04-26T09:27:38.4566786Z Establishing user namespace if not established already.
+2026-04-26T09:27:38.4569192Z Establishing network if not established already.
+2026-04-26T09:27:38.4571036Z Mounting volumes.
+2026-04-26T09:27:38.4573958Z Nested mountpoint 
+2026-04-26T09:27:38.4684340Z Nested mountpoint volatile/logs
+2026-04-26T09:27:38.4729202Z Nested mountpoint 
+2026-04-26T09:27:38.4835381Z Nested mountpoint 
+2026-04-26T09:27:38.4844257Z Nested mountpoint 
+2026-04-26T09:27:38.6449728Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for fairlens-ai. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-26T09:27:38.6456132Z Creating container.
+2026-04-26T09:27:38.6457665Z Creating pipes for streaming container io.
+2026-04-26T09:27:38.6459311Z Creating stdout named pipe at /podr/container/pipe/c0940739cffb_fairlens-ai/stdout_19f4a9e24eb446948b32e55e2092bdae.
+2026-04-26T09:27:38.6714000Z Successfully created stdout named pipe at: /podr/container/pipe/c0940739cffb_fairlens-ai/stdout_19f4a9e24eb446948b32e55e2092bdae.
+2026-04-26T09:27:38.6715916Z Opening named pipe /podr/container/pipe/c0940739cffb_fairlens-ai/stdout_19f4a9e24eb446948b32e55e2092bdae for reading in non-blocking mode.
+2026-04-26T09:27:38.6718768Z Successfully opened named pipe: /podr/container/pipe/c0940739cffb_fairlens-ai/stdout_19f4a9e24eb446948b32e55e2092bdae.
+2026-04-26T09:27:38.6720241Z Successfully removed non-blocking flag from /podr/container/pipe/c0940739cffb_fairlens-ai/stdout_19f4a9e24eb446948b32e55e2092bdae.
+2026-04-26T09:27:38.6730569Z Creating stderr named pipe at /podr/container/pipe/c0940739cffb_fairlens-ai/stderr_374f27a6b3d14327a426fe74b2e2a45d.
+2026-04-26T09:27:38.6737583Z Successfully created stderr named pipe at: /podr/container/pipe/c0940739cffb_fairlens-ai/stderr_374f27a6b3d14327a426fe74b2e2a45d.
+2026-04-26T09:27:38.6741117Z Opening named pipe /podr/container/pipe/c0940739cffb_fairlens-ai/stderr_374f27a6b3d14327a426fe74b2e2a45d for reading in non-blocking mode.
+2026-04-26T09:27:38.6743540Z Successfully opened named pipe: /podr/container/pipe/c0940739cffb_fairlens-ai/stderr_374f27a6b3d14327a426fe74b2e2a45d.
+2026-04-26T09:27:38.6747264Z Successfully removed non-blocking flag from /podr/container/pipe/c0940739cffb_fairlens-ai/stderr_374f27a6b3d14327a426fe74b2e2a45d.
+2026-04-26T09:27:38.6752347Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/node:20-lts_20260115.4.tuxprod
+2026-04-26T09:27:39.1333090Z Starting container: c0940739cffb_fairlens-ai.
+2026-04-26T09:27:39.2020482Z Starting watchers and probes.
+2026-04-26T09:27:39.2028673Z Starting metrics collection.
+2026-04-26T09:27:39.2040206Z Container is running.
+2026-04-26T09:27:39.2051914Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container fairlens-ai successfully created and is running., DetailsLevel: INFO
+2026-04-26T09:27:39.2447706Z Container start method finished after 1224 ms.
+2026-04-26T09:27:39.2450779Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container fairlens-ai successfully created and is running., DetailsLevel: INFO
+2026-04-26T09:27:39.2483554Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-26T09:27:50.3343600Z Site startup probe succeeded after 11.0596882 seconds.
+2026-04-26T09:27:50.4532667Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 11.0596882 seconds., DetailsLevel: INFO
+2026-04-26T09:27:50.7442652Z Site is running with deployment version: 261b26bf-e12b-4900-935d-0aff2dcbe886
+2026-04-26T09:27:50.7456546Z Site started.
+2026-04-26T09:27:50.7457673Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 04/26/2026 09:27:50 (UTC), DetailsLevel: INFO
+2026-04-26T09:27:50.8010998Z Site is running with patch version NODE 20.20.0
+2026-04-26T09:32:42.1675498Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-26T09:32:43.1355590Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-26T09:32:43.1356877Z Container start method called.
+2026-04-26T09:32:43.1357444Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.5:13209/appsvc/node:20-lts_20260115.4.tuxprod for fairlens-ai., DetailsLevel: INFO
+2026-04-26T09:32:43.1358602Z Establishing network.
+2026-04-26T09:32:43.1384439Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-04-26T09:32:43.6020994Z Container is starting.
+2026-04-26T09:32:43.6022148Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for fairlens-ai., DetailsLevel: INFO
+2026-04-26T09:32:43.6023477Z Establishing user namespace if not established already.
+2026-04-26T09:32:43.6024754Z Establishing network if not established already.
+2026-04-26T09:32:43.6089880Z Mounting volumes.
+2026-04-26T09:32:43.6237762Z Nested mountpoint 
+2026-04-26T09:32:43.6668798Z Nested mountpoint volatile/logs
+2026-04-26T09:32:43.7208407Z Nested mountpoint 
+2026-04-26T09:32:43.7217356Z Nested mountpoint 
+2026-04-26T09:32:43.8354507Z Nested mountpoint 
+2026-04-26T09:32:43.9022689Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for fairlens-ai. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-26T09:32:43.9024269Z Creating container.
+2026-04-26T09:32:43.9033481Z Creating pipes for streaming container io.
+2026-04-26T09:32:43.9035014Z Creating stdout named pipe at /podr/container/pipe/101ed77c4126_fairlens-ai/stdout_1edbbe43aa8440ca8663e56a0cdfdb47.
+2026-04-26T09:32:43.9042480Z Successfully created stdout named pipe at: /podr/container/pipe/101ed77c4126_fairlens-ai/stdout_1edbbe43aa8440ca8663e56a0cdfdb47.
+2026-04-26T09:32:43.9046914Z Opening named pipe /podr/container/pipe/101ed77c4126_fairlens-ai/stdout_1edbbe43aa8440ca8663e56a0cdfdb47 for reading in non-blocking mode.
+2026-04-26T09:32:43.9050059Z Successfully opened named pipe: /podr/container/pipe/101ed77c4126_fairlens-ai/stdout_1edbbe43aa8440ca8663e56a0cdfdb47.
+2026-04-26T09:32:43.9052068Z Successfully removed non-blocking flag from /podr/container/pipe/101ed77c4126_fairlens-ai/stdout_1edbbe43aa8440ca8663e56a0cdfdb47.
+2026-04-26T09:32:43.9055259Z Creating stderr named pipe at /podr/container/pipe/101ed77c4126_fairlens-ai/stderr_20dec24a682b43bab35342e2d06d8708.
+2026-04-26T09:32:43.9057245Z Successfully created stderr named pipe at: /podr/container/pipe/101ed77c4126_fairlens-ai/stderr_20dec24a682b43bab35342e2d06d8708.
+2026-04-26T09:32:43.9058493Z Opening named pipe /podr/container/pipe/101ed77c4126_fairlens-ai/stderr_20dec24a682b43bab35342e2d06d8708 for reading in non-blocking mode.
+2026-04-26T09:32:43.9062986Z Successfully opened named pipe: /podr/container/pipe/101ed77c4126_fairlens-ai/stderr_20dec24a682b43bab35342e2d06d8708.
+2026-04-26T09:32:43.9066017Z Successfully removed non-blocking flag from /podr/container/pipe/101ed77c4126_fairlens-ai/stderr_20dec24a682b43bab35342e2d06d8708.
+2026-04-26T09:32:43.9071168Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/node:20-lts_20260115.4.tuxprod
+2026-04-26T09:32:44.3967193Z Starting container: 101ed77c4126_fairlens-ai.
+2026-04-26T09:32:44.4396329Z Starting watchers and probes.
+2026-04-26T09:32:44.4403858Z Starting metrics collection.
+2026-04-26T09:32:44.4405805Z Container is running.
+2026-04-26T09:32:44.4406904Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container fairlens-ai successfully created and is running., DetailsLevel: INFO
+2026-04-26T09:32:44.5034909Z Container start method finished after 1367 ms.
+2026-04-26T09:32:44.5040279Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container fairlens-ai successfully created and is running., DetailsLevel: INFO
+2026-04-26T09:32:44.5040867Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-26T09:33:00.5454819Z Site startup probe succeeded after 16.0332762 seconds.
+2026-04-26T09:33:00.6187156Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 16.0332762 seconds., DetailsLevel: INFO
+2026-04-26T09:33:00.8515353Z Site is running with deployment version: 261b26bf-e12b-4900-935d-0aff2dcbe886
+2026-04-26T09:33:00.8526608Z Site started.
+2026-04-26T09:33:00.8528051Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 04/26/2026 09:33:00 (UTC), DetailsLevel: INFO
+2026-04-26T09:33:00.8561964Z Site is running with patch version NODE 20.20.0
+2026-04-26T09:33:20.8862477Z State: Stopping, Action: StoppingSite, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 04/26/2026 09:27:50 (UTC), DetailsLevel: INFO
+2026-04-26T09:33:20.8900339Z State: Stopping, Action: StoppingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 04/26/2026 09:27:50 (UTC), DetailsLevel: INFO
+2026-04-26T09:33:20.8906160Z Container is terminating. Grace period: 5 seconds.
+2026-04-26T09:33:20.9000764Z Stop and delete container. Retry count = 0
+2026-04-26T09:33:20.9004001Z Stopping container: c0940739cffb_fairlens-ai.
+2026-04-26T09:33:25.9575912Z Deleting container: c0940739cffb_fairlens-ai. Retry count = 0
+2026-04-26T09:33:26.6229669Z Container spec TerminationMessagePolicy  path 
+2026-04-26T09:33:26.6231574Z Container is terminated. Total time elapsed: 5732 ms.
+2026-04-26T09:33:26.6255501Z Site: fairlens-ai stopped.
+2026-04-26T09:41:53.5110527Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-26T09:41:54.7771138Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-26T09:41:54.7795180Z Container start method called.
+2026-04-26T09:41:54.7796366Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.4:13209/appsvc/node:20-lts_20260115.4.tuxprod for fairlens-ai., DetailsLevel: INFO
+2026-04-26T09:41:54.7803336Z Establishing network.
+2026-04-26T09:41:54.7815056Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-04-26T09:41:55.0746096Z Container is starting.
+2026-04-26T09:41:55.0747584Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for fairlens-ai., DetailsLevel: INFO
+2026-04-26T09:41:55.0752934Z Establishing user namespace if not established already.
+2026-04-26T09:41:55.0756229Z Establishing network if not established already.
+2026-04-26T09:41:55.0758917Z Mounting volumes.
+2026-04-26T09:41:55.0768925Z Nested mountpoint 
+2026-04-26T09:41:55.0839816Z Nested mountpoint volatile/logs
+2026-04-26T09:41:55.0906792Z Nested mountpoint 
+2026-04-26T09:41:55.0969952Z Nested mountpoint 
+2026-04-26T09:41:55.0996404Z Nested mountpoint 
+2026-04-26T09:41:55.1993996Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for fairlens-ai. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-26T09:41:55.1995362Z Creating container.
+2026-04-26T09:41:55.1996718Z Creating pipes for streaming container io.
+2026-04-26T09:41:55.1997862Z Creating stdout named pipe at /podr/container/pipe/73e9543edbca_fairlens-ai/stdout_188cce14261d4b36b6ae8e818c32c000.
+2026-04-26T09:41:55.2023606Z Successfully created stdout named pipe at: /podr/container/pipe/73e9543edbca_fairlens-ai/stdout_188cce14261d4b36b6ae8e818c32c000.
+2026-04-26T09:41:55.2025222Z Opening named pipe /podr/container/pipe/73e9543edbca_fairlens-ai/stdout_188cce14261d4b36b6ae8e818c32c000 for reading in non-blocking mode.
+2026-04-26T09:41:55.2028327Z Successfully opened named pipe: /podr/container/pipe/73e9543edbca_fairlens-ai/stdout_188cce14261d4b36b6ae8e818c32c000.
+2026-04-26T09:41:55.2034787Z Successfully removed non-blocking flag from /podr/container/pipe/73e9543edbca_fairlens-ai/stdout_188cce14261d4b36b6ae8e818c32c000.
+2026-04-26T09:41:55.2058038Z Creating stderr named pipe at /podr/container/pipe/73e9543edbca_fairlens-ai/stderr_e27e700db88042cfbfbde8d2b93673c6.
+2026-04-26T09:41:55.2064153Z Successfully created stderr named pipe at: /podr/container/pipe/73e9543edbca_fairlens-ai/stderr_e27e700db88042cfbfbde8d2b93673c6.
+2026-04-26T09:41:55.2065475Z Opening named pipe /podr/container/pipe/73e9543edbca_fairlens-ai/stderr_e27e700db88042cfbfbde8d2b93673c6 for reading in non-blocking mode.
+2026-04-26T09:41:55.2066827Z Successfully opened named pipe: /podr/container/pipe/73e9543edbca_fairlens-ai/stderr_e27e700db88042cfbfbde8d2b93673c6.
+2026-04-26T09:41:55.2067971Z Successfully removed non-blocking flag from /podr/container/pipe/73e9543edbca_fairlens-ai/stderr_e27e700db88042cfbfbde8d2b93673c6.
+2026-04-26T09:41:55.2092887Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/node:20-lts_20260115.4.tuxprod
+2026-04-26T09:41:55.6623586Z Starting container: 73e9543edbca_fairlens-ai.
+2026-04-26T09:41:55.6989651Z Starting watchers and probes.
+2026-04-26T09:41:55.7020673Z Starting metrics collection.
+2026-04-26T09:41:55.7041968Z Container is running.
+2026-04-26T09:41:55.7049860Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container fairlens-ai successfully created and is running., DetailsLevel: INFO
+2026-04-26T09:41:55.7301244Z Container start method finished after 950 ms.
+2026-04-26T09:41:55.7310192Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container fairlens-ai successfully created and is running., DetailsLevel: INFO
+2026-04-26T09:41:55.7310619Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-26T09:42:14.9907393Z Site startup probe succeeded after 19.2433107 seconds.
+2026-04-26T09:42:15.7907364Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 19.2433107 seconds., DetailsLevel: INFO
+2026-04-26T09:42:17.2405146Z Site is running with deployment version: 23c25490-c806-418c-b664-d979de5a5c2a
+2026-04-26T09:42:17.2408198Z Site started.
+2026-04-26T09:42:17.2409323Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 04/26/2026 09:42:17 (UTC), DetailsLevel: INFO
+2026-04-26T09:42:17.3427652Z Site is running with patch version NODE 20.20.0
+2026-04-26T09:42:37.5721848Z State: Stopping, Action: StoppingSite, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 04/26/2026 09:33:00 (UTC), DetailsLevel: INFO
+2026-04-26T09:42:37.5763400Z State: Stopping, Action: StoppingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 04/26/2026 09:33:00 (UTC), DetailsLevel: INFO
+2026-04-26T09:42:37.5815879Z Container is terminating. Grace period: 5 seconds.
+2026-04-26T09:42:37.6356999Z Stop and delete container. Retry count = 0
+2026-04-26T09:42:37.6359476Z Stopping container: 101ed77c4126_fairlens-ai.
+2026-04-26T09:42:42.6547275Z Deleting container: 101ed77c4126_fairlens-ai. Retry count = 0
+2026-04-26T09:42:42.9314674Z Container spec TerminationMessagePolicy  path 
+2026-04-26T09:42:42.9328504Z Container is terminated. Total time elapsed: 5350 ms.
+2026-04-26T09:42:42.9347516Z Site: fairlens-ai stopped.
+2026-04-26T09:57:44.9965708Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-26T09:57:45.7644941Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-26T09:57:45.7646510Z Container start method called.
+2026-04-26T09:57:45.7647006Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.5:13209/appsvc/node:20-lts_20260115.4.tuxprod for fairlens-ai., DetailsLevel: INFO
+2026-04-26T09:57:45.7650640Z Establishing network.
+2026-04-26T09:57:45.7653993Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-04-26T09:57:45.9868709Z Container is starting.
+2026-04-26T09:57:45.9872930Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for fairlens-ai., DetailsLevel: INFO
+2026-04-26T09:57:45.9874265Z Establishing user namespace if not established already.
+2026-04-26T09:57:45.9875605Z Establishing network if not established already.
+2026-04-26T09:57:45.9876947Z Mounting volumes.
+2026-04-26T09:57:45.9879956Z Nested mountpoint 
+2026-04-26T09:57:45.9948862Z Nested mountpoint volatile/logs
+2026-04-26T09:57:45.9993981Z Nested mountpoint 
+2026-04-26T09:57:46.0091066Z Nested mountpoint 
+2026-04-26T09:57:46.0128533Z Nested mountpoint 
+2026-04-26T09:57:46.2625856Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for fairlens-ai. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-26T09:57:46.2628580Z Creating container.
+2026-04-26T09:57:46.2676829Z Creating pipes for streaming container io.
+2026-04-26T09:57:46.2729522Z Creating stdout named pipe at /podr/container/pipe/1c77893698f8_fairlens-ai/stdout_ce8fcd178f70430ab4deeb0d6641e26f.
+2026-04-26T09:57:46.2754922Z Successfully created stdout named pipe at: /podr/container/pipe/1c77893698f8_fairlens-ai/stdout_ce8fcd178f70430ab4deeb0d6641e26f.
+2026-04-26T09:57:46.2762344Z Opening named pipe /podr/container/pipe/1c77893698f8_fairlens-ai/stdout_ce8fcd178f70430ab4deeb0d6641e26f for reading in non-blocking mode.
+2026-04-26T09:57:46.2763627Z Successfully opened named pipe: /podr/container/pipe/1c77893698f8_fairlens-ai/stdout_ce8fcd178f70430ab4deeb0d6641e26f.
+2026-04-26T09:57:46.2764615Z Successfully removed non-blocking flag from /podr/container/pipe/1c77893698f8_fairlens-ai/stdout_ce8fcd178f70430ab4deeb0d6641e26f.
+2026-04-26T09:57:46.2766231Z Creating stderr named pipe at /podr/container/pipe/1c77893698f8_fairlens-ai/stderr_4bbc365e16d44b22bc9f97fdf956f49a.
+2026-04-26T09:57:46.2775170Z Successfully created stderr named pipe at: /podr/container/pipe/1c77893698f8_fairlens-ai/stderr_4bbc365e16d44b22bc9f97fdf956f49a.
+2026-04-26T09:57:46.2791588Z Opening named pipe /podr/container/pipe/1c77893698f8_fairlens-ai/stderr_4bbc365e16d44b22bc9f97fdf956f49a for reading in non-blocking mode.
+2026-04-26T09:57:46.2793999Z Successfully opened named pipe: /podr/container/pipe/1c77893698f8_fairlens-ai/stderr_4bbc365e16d44b22bc9f97fdf956f49a.
+2026-04-26T09:57:46.2795856Z Successfully removed non-blocking flag from /podr/container/pipe/1c77893698f8_fairlens-ai/stderr_4bbc365e16d44b22bc9f97fdf956f49a.
+2026-04-26T09:57:46.2882138Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/node:20-lts_20260115.4.tuxprod
+2026-04-26T09:57:46.8463023Z Starting container: 1c77893698f8_fairlens-ai.
+2026-04-26T09:57:46.8979662Z Starting watchers and probes.
+2026-04-26T09:57:46.8985242Z Starting metrics collection.
+2026-04-26T09:57:46.8987413Z Container is running.
+2026-04-26T09:57:46.8988215Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container fairlens-ai successfully created and is running., DetailsLevel: INFO
+2026-04-26T09:57:47.0542802Z Container start method finished after 1289 ms.
+2026-04-26T09:57:47.0545137Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container fairlens-ai successfully created and is running., DetailsLevel: INFO
+2026-04-26T09:57:47.0545456Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-26T09:57:58.0748636Z Site startup probe succeeded after 11.0198852 seconds.
+2026-04-26T09:57:58.1435870Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 11.0198852 seconds., DetailsLevel: INFO
+2026-04-26T09:57:58.3048284Z Site is running with deployment version: dfbe396a-c5ff-4f17-9436-7fbb5cb6635c
+2026-04-26T09:57:58.3050717Z Site started.
+2026-04-26T09:57:58.3051381Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 04/26/2026 09:57:58 (UTC), DetailsLevel: INFO
+2026-04-26T09:57:58.3068653Z Site is running with patch version NODE 20.20.0
+2026-04-26T09:58:18.3164126Z State: Stopping, Action: StoppingSite, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 04/26/2026 09:42:17 (UTC), DetailsLevel: INFO
+2026-04-26T09:58:18.3177865Z State: Stopping, Action: StoppingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 04/26/2026 09:42:17 (UTC), DetailsLevel: INFO
+2026-04-26T09:58:18.3180876Z Container is terminating. Grace period: 5 seconds.
+2026-04-26T09:58:18.3367084Z Stop and delete container. Retry count = 0
+2026-04-26T09:58:18.3368328Z Stopping container: 73e9543edbca_fairlens-ai.
+2026-04-26T09:58:23.3884886Z Deleting container: 73e9543edbca_fairlens-ai. Retry count = 0
+2026-04-26T09:58:23.6900238Z Container spec TerminationMessagePolicy  path 
+2026-04-26T09:58:23.6902248Z Container is terminated. Total time elapsed: 5371 ms.
+2026-04-26T09:58:23.6904092Z Site: fairlens-ai stopped.
+2026-04-26T11:14:23.5821216Z State: Blocked, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-26T11:14:43.6630900Z State: Stopping, Action: StoppingSite, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 04/26/2026 09:57:58 (UTC), DetailsLevel: INFO
+2026-04-26T11:14:43.6687097Z State: Stopping, Action: StoppingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 04/26/2026 09:57:58 (UTC), DetailsLevel: INFO
+2026-04-26T11:14:43.6741957Z Container is terminating. Grace period: 5 seconds.
+2026-04-26T11:14:43.6967437Z Stop and delete container. Retry count = 0
+2026-04-26T11:14:43.6969947Z Stopping container: 1c77893698f8_fairlens-ai.
+2026-04-26T11:14:48.7863061Z Deleting container: 1c77893698f8_fairlens-ai. Retry count = 0
+2026-04-26T11:14:49.1007761Z Container spec TerminationMessagePolicy  path 
+2026-04-26T11:14:49.1010278Z Container is terminated. Total time elapsed: 5426 ms.
+2026-04-26T11:14:49.1021790Z Site: fairlens-ai stopped.
+2026-04-26T12:29:53.0377614Z State: Blocked, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-26T12:29:53.8002372Z State: Blocked, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-26T12:29:55.6486267Z State: Blocked, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-26T12:29:56.0521330Z State: Blocked, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-26T12:29:57.1609536Z State: Blocked, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-26T12:30:23.3480061Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-26T12:30:23.7417923Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-26T12:30:23.7420236Z Container start method called.
+2026-04-26T12:30:23.7420932Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.5:13209/appsvc/node:20-lts_20260115.4.tuxprod for fairlens-ai., DetailsLevel: INFO
+2026-04-26T12:30:23.7422107Z Establishing network.
+2026-04-26T12:30:23.7423339Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-04-26T12:30:23.8600843Z Container is starting.
+2026-04-26T12:30:23.8601577Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for fairlens-ai., DetailsLevel: INFO
+2026-04-26T12:30:23.8602679Z Establishing user namespace if not established already.
+2026-04-26T12:30:23.8603756Z Establishing network if not established already.
+2026-04-26T12:30:23.8605014Z Mounting volumes.
+2026-04-26T12:30:23.8606540Z Nested mountpoint 
+2026-04-26T12:30:23.8648468Z Nested mountpoint volatile/logs
+2026-04-26T12:30:23.8674429Z Nested mountpoint 
+2026-04-26T12:30:23.8816518Z Nested mountpoint 
+2026-04-26T12:30:23.8842103Z Nested mountpoint 
+2026-04-26T12:30:23.9703378Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for fairlens-ai. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-26T12:30:23.9704751Z Creating container.
+2026-04-26T12:30:23.9706418Z Creating pipes for streaming container io.
+2026-04-26T12:30:23.9707753Z Creating stdout named pipe at /podr/container/pipe/777bb1d9a773_fairlens-ai/stdout_925279e9f0b64d0ba73249300bb93c8c.
+2026-04-26T12:30:23.9727943Z Successfully created stdout named pipe at: /podr/container/pipe/777bb1d9a773_fairlens-ai/stdout_925279e9f0b64d0ba73249300bb93c8c.
+2026-04-26T12:30:23.9731354Z Opening named pipe /podr/container/pipe/777bb1d9a773_fairlens-ai/stdout_925279e9f0b64d0ba73249300bb93c8c for reading in non-blocking mode.
+2026-04-26T12:30:23.9736050Z Successfully opened named pipe: /podr/container/pipe/777bb1d9a773_fairlens-ai/stdout_925279e9f0b64d0ba73249300bb93c8c.
+2026-04-26T12:30:23.9739456Z Successfully removed non-blocking flag from /podr/container/pipe/777bb1d9a773_fairlens-ai/stdout_925279e9f0b64d0ba73249300bb93c8c.
+2026-04-26T12:30:23.9755146Z Creating stderr named pipe at /podr/container/pipe/777bb1d9a773_fairlens-ai/stderr_1dd1e69a23ab4510aef9557b509aad7e.
+2026-04-26T12:30:23.9761914Z Successfully created stderr named pipe at: /podr/container/pipe/777bb1d9a773_fairlens-ai/stderr_1dd1e69a23ab4510aef9557b509aad7e.
+2026-04-26T12:30:23.9763945Z Opening named pipe /podr/container/pipe/777bb1d9a773_fairlens-ai/stderr_1dd1e69a23ab4510aef9557b509aad7e for reading in non-blocking mode.
+2026-04-26T12:30:23.9770171Z Successfully opened named pipe: /podr/container/pipe/777bb1d9a773_fairlens-ai/stderr_1dd1e69a23ab4510aef9557b509aad7e.
+2026-04-26T12:30:23.9775161Z Successfully removed non-blocking flag from /podr/container/pipe/777bb1d9a773_fairlens-ai/stderr_1dd1e69a23ab4510aef9557b509aad7e.
+2026-04-26T12:30:23.9777456Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/node:20-lts_20260115.4.tuxprod
+2026-04-26T12:30:24.3115177Z Starting container: 777bb1d9a773_fairlens-ai.
+2026-04-26T12:30:24.3300779Z Starting watchers and probes.
+2026-04-26T12:30:24.3303508Z Starting metrics collection.
+2026-04-26T12:30:24.3315710Z Container is running.
+2026-04-26T12:30:24.3316781Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container fairlens-ai successfully created and is running., DetailsLevel: INFO
+2026-04-26T12:30:24.3668041Z Container start method finished after 624 ms.
+2026-04-26T12:30:24.3672250Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container fairlens-ai successfully created and is running., DetailsLevel: INFO
+2026-04-26T12:30:24.3672546Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-26T12:30:36.3969118Z Site startup probe succeeded after 12.0233665 seconds.
+2026-04-26T12:30:36.4660431Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 12.0233665 seconds., DetailsLevel: INFO
+2026-04-26T12:30:36.6341583Z Site is running with deployment version: dfbe396a-c5ff-4f17-9436-7fbb5cb6635c
+2026-04-26T12:30:36.6444809Z Site started.
+2026-04-26T12:30:36.6447311Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 04/26/2026 12:30:36 (UTC), DetailsLevel: INFO
+2026-04-26T12:30:36.6492072Z Site is running with patch version NODE 20.20.0
+2026-04-26T14:20:04.5284108Z State: Stopping, Action: StoppingSite, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 04/26/2026 12:30:36 (UTC), DetailsLevel: INFO
+2026-04-26T14:20:04.5749669Z State: Stopping, Action: StoppingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 04/26/2026 12:30:36 (UTC), DetailsLevel: INFO
+2026-04-26T14:20:04.5787072Z Container is terminating. Grace period: 5 seconds.
+2026-04-26T14:20:04.7138695Z Stop and delete container. Retry count = 0
+2026-04-26T14:20:04.7184751Z Stopping container: 777bb1d9a773_fairlens-ai.
+2026-04-26T14:20:09.6863301Z Deleting container: 777bb1d9a773_fairlens-ai. Retry count = 0
+2026-04-26T14:20:09.8190219Z Container spec TerminationMessagePolicy  path 
+2026-04-26T14:20:09.8193224Z Container is terminated. Total time elapsed: 5236 ms.
+2026-04-26T14:20:09.8257237Z Site: fairlens-ai stopped.

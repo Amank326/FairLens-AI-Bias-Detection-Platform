@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<deployment>
+  <id>23c25490-c806-418c-b664-d979de5a5c2a</id>
+  <author>ms-azuretools-vscode</author>
+  <deployer>ms-azuretools-vscode</deployer>
+  <authorEmail>N/A</authorEmail>
+  <message>Created via a push deployment</message>
+  <progress></progress>
+  <status>Success</status>
+  <statusText></statusText>
+  <lastSuccessEndTime>2026-04-26T09:41:49.7876031Z</lastSuccessEndTime>
+  <receivedTime>2026-04-26T09:41:31.2886149Z</receivedTime>
+  <startTime>2026-04-26T09:41:32.6668087Z</startTime>
+  <endTime>2026-04-26T09:41:49.7876031Z</endTime>
+  <complete>True</complete>
+  <is_temp>False</is_temp>
+  <is_readonly>True</is_readonly>
+  <containerId>4b18e13edb67</containerId>
+  <buildSummary />
+</deployment>

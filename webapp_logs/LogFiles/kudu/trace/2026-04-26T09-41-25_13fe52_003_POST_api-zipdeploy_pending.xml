@@ -1,0 +1,19 @@
+<step title="Incoming Request" date="2026-04-26T09:41:25.934" instance="13fe52" url="/api/zipdeploy?author=ms-azuretools-vscode&amp;deployer=ms-azuretools-vscode&amp;isAsync=true&amp;trackDeploymentId=true" method="POST" type="request" pid="831,1,20" Host="fairlens-ai-bufhfhasancsgue6.scm.eastus-01.azurewebsites.net" User-Agent="vscode-azureappservice/0.26.5 core-rest-pipeline/1.22.2 Node/22.22.1 (Windows_NT 10.0.26200; x64)" Accept-Encoding="gzip,deflate" Accept-Language="en" Authorization="Bea..." baggage="sentry-environment=prod,sentry-release=1.4.317,sentry-public_key=b1971398528bc89c8c4e6f8efac45ca6,sentry-trace_id=50a9187986ef7e5c81eb56af2ce7a657" Transfer-Encoding="chunked" x-ms-correlation-request-id="175b9736-dd82-457c-916c-be111f456b27" x-ms-client-request-id="bfc91b01-93a1-4013-8ac0-932ded2317da" sentry-trace="50a9187986ef7e5c81eb56af2ce7a657-947d61b9f87f5a50" X-ARR-LOG-ID="bfc91b01-93a1-4013-8ac0-932ded2317da" CLIENT-IP="49.47.11.81:59761" X-SITE-DEPLOYMENT-ID="fairlens-ai" WAS-DEFAULT-HOSTNAME="fairlens-ai-bufhfhasancsgue6.scm.eastus-01.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/api/zipdeploy?author=ms-azuretools-vscode&amp;deployer=ms-azuretools-vscode&amp;isAsync=true&amp;trackDeploymentId=true" X-Client-IP="49.47.11.81" X-Client-Port="59761" >
+  <step title="ZipPushDeploy" date="2026-04-26T09:41:25.992" >
+    <step title="ZipDeploy. Extract zip." date="2026-04-26T09:41:26.011" /><!-- duration: 5ms -->
+    <step title="None repository commit" date="2026-04-26T09:41:26.032" >
+      <step title="Commit id: 23c25490-c806-418c-b664-d979de5a5c2a" date="2026-04-26T09:41:26.038" Message="N/A" AuthorName="N/A" AuthorEmail="N/A" /><!-- duration: 4ms -->
+    </step><!-- duration: 18ms -->
+    <step title="Starting PushDeployAsync" date="2026-04-26T09:41:26.057" /><!-- duration: 6ms -->
+    <step title="Removing _del_node_modules symlink" date="2026-04-26T09:41:26.108" >
+      <step title="Writing artifact to /tmp/zipdeploy/7e1c231b-d475-40d8-a945-8d34ee69906f.zip" date="2026-04-26T09:41:26.634" >
+        <step title="Writing multipart request body to /tmp/zipdeploy/7e1c231b-d475-40d8-a945-8d34ee69906f.zip" date="2026-04-26T09:41:26.639" /><!-- duration: 3ms -->
+      </step><!-- duration: 72ms -->
+      <step title="Removing previous build artifact&apos;s manifest file" date="2026-04-26T09:41:26.714" >
+        <step title="Start deployment in the background" date="2026-04-26T09:41:26.737" >
+          <step title="Acquiring Deployment Lock" date="2026-04-26T09:41:26.799" /><!-- duration: 7ms -->
+          <step title="Acquired Deployment Lock" date="2026-04-26T09:41:26.842" /><!-- duration: 4ms -->
+        </step><!-- duration: 299ms -->
+      </step><!-- duration: 339ms -->
+      <step title="Outgoing response" date="2026-04-26T09:41:27.067" type="response" statusCode="202" statusText="Accepted" /><!-- duration: 5ms -->
+    </step><!-- duration: 970ms -->
